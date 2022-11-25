@@ -91,7 +91,7 @@
             </div>
         </section>
         <!--Чим займаємось, фото-->
-        <!-- <section class="section about">
+        <section class="section about">
             <div class="container about__container">
             <h2 class="section-title about__title">Чим ми займаємося</h2>
             <ul class="about__list">
@@ -106,14 +106,32 @@
                 </li>
             </ul>
             </div>
-        </section> -->
+        </section>
         <!--Наша команда-->
-        <!-- <section class="people">
+        <section class="people">
             <div class="container people__container">
             <h2 class="section-title people__title">Наша команда</h2>
             <ul class="people__list">
                 <li class="people__item">
-                    <img class="people__image" src="./images/person1.jpg" alt="Чоловік в бордовій сорочці" width="270" height="260">
+                <picture>
+                    <source
+                        srcset="./images/person1.jpg 1x, ./images/person1-2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                    />
+                    <source
+                        srcset="./images/person1-tab.jpg 1x, ./images/person1-tab-2x.jpg 2x"
+                        media="(min-width: 768px)"
+                    />
+                    <source
+                        srcset="./images/person1-mob.jpg 1x, ./images/person1-mob-2x.jpg 2x"
+                        media="(min-width: 480px)"
+                    />
+                    <img class="people__image" 
+                    src="./images/person1.jpg" 
+                    alt="Чоловік в бордовій сорочці"
+                    />
+                </picture>
+                <div class="people__worker">
                     <h3 class="people__subtitle">Ігор Дем'яненко</h3>
                     <p class="people__text">Product Designer</p>
                     <ul class="social">
@@ -146,9 +164,28 @@
                             </a>
                         </li>
                     </ul>
+                </div>
                 </li>
                 <li class="people__item">
-                    <img class="people__image" src="./images/person2.jpg" alt="Жінка в чорному піджаку" width="270" height="260">
+                <picture>
+                    <source
+                        srcset="./images/person2.jpg 1x, ./images/person2-2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                    />
+                    <source
+                        srcset="./images/person2-tab.jpg 1x, ./images/person2-tab-2x.jpg 2x"
+                        media="(min-width: 768px)"
+                    />
+                    <source
+                        srcset="./images/person2-mob.jpg 1x, ./images/person2-mob-2x.jpg 2x"
+                        media="(min-width: 480px)"
+                    />
+                    <img class="people__image" 
+                    src="./images/person2.jpg" 
+                    alt="Жінка в чорному піджаку"
+                    />
+                </picture>
+                <div class="people__worker">
                     <h3 class="people__subtitle">Ольга Рєпіна</h3>
                     <p class="people__text">Frontend Developer</p>
                     <ul class="social">
@@ -181,9 +218,28 @@
                             </a>
                         </li>
                     </ul>
+                </div>
                 </li>
                 <li class="people__item">
-                    <img class="people__image" src="./images/person3.jpg" alt="Чоловік у голубій сорочці" width="270" height="260">
+                <picture>
+                    <source
+                        srcset="./images/person3.jpg 1x, ./images/person3-2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                    />
+                    <source
+                        srcset="./images/person3-tab.jpg 1x, ./images/person3-tab-2x.jpg 2x"
+                        media="(min-width: 768px)"
+                    />
+                    <source
+                        srcset="./images/person3-mob.jpg 1x, ./images/person3-mob-2x.jpg 2x"
+                        media="(min-width: 480px)"
+                    />
+                    <img class="people__image" 
+                    src="./images/person3.jpg" 
+                    alt="Чоловік у голубій сорочці"
+                    />
+                </picture>
+                <div class="people__worker">
                     <h3 class="people__subtitle">Микола Тарасов</h3>
                     <p class="people__text">Marketing</p>
                     <ul class="social">
@@ -216,9 +272,28 @@
                             </a>
                         </li>
                     </ul>
+                </div>
                 </li>
                 <li class="people__item">
-                    <img class="people__image" src="./images/person4.jpg" alt="Чоловік у чорній футболці" width="270" height="260">
+                    <picture>
+                    <source
+                        srcset="./images/person4.jpg 1x, ./images/person4-2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                    />
+                    <source
+                        srcset="./images/person4-tab.jpg 1x, ./images/person4-tab-2x.jpg 2x"
+                        media="(min-width: 768px)"
+                    />
+                    <source
+                        srcset="./images/person4-mob.jpg 1x, ./images/person4-mob-2x.jpg 2x"
+                        media="(min-width: 480px)"
+                    />
+                    <img class="people__image" 
+                    src="./images/person4.jpg" 
+                    alt="Чоловік у чорній футболці"
+                    />
+                </picture>
+                <div class="people__worker">
                     <h3 class="people__subtitle">Михайло Єрмаков</h3>
                     <p class="people__text">UI Designer</p>
                     <ul class="social">
@@ -252,11 +327,12 @@
                         </li>
                     </ul>
                 </li>
+                </div>
             </ul>
             </div>
-        </section> -->
+        </section>
         <!--Постійні клієнти-->
-        <!-- <section class="section companies">
+        <section class="section companies">
             <div class="container companies__container">
                 <h2 class="section-title companies__title">Постійні клієнти</h2>
                 <ul class="companies__list">
@@ -304,7 +380,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
     <!--Підвал-->
     <!-- <footer class="footer">
