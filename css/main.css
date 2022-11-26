@@ -102,7 +102,13 @@ img {
   transition: opacity 250ms linear, visibility 250ms linear;
 }
 
-.backdrop.is-hidden {
+.backdrop .is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -230,10 +236,21 @@ img {
   position: absolute;
   bottom: -32px;
   left: 0;
-  width: 48px;
+  top: 47px;
+  width: 100%;
   height: 4px;
   background-color: var(--secondary-color);
   border-radius: 2px;
+}
+@media screen and (min-width: 768px) {
+  .menu__item-studio::after {
+    top: 44px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu__item-studio::after {
+    top: 47px;
+  }
 }
 
 .menu__item-portfolio {
@@ -256,6 +273,7 @@ img {
 }
 
 .header__contact {
+  list-style: none;
   display: none;
   margin-left: auto;
 }
@@ -293,6 +311,27 @@ img {
   color: var(--secondary-color);
 }
 
+.contact__item {
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .contact__item {
+    margin-left: 0;
+  }
+  .contact__item + .contact__item {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__item:last-child {
+    margin-left: 50px;
+  }
+  .contact__item + .contact__item {
+    margin-top: 0;
+  }
+}
+
 .contact__icon {
   fill: currentColor;
   margin-right: 10px;
@@ -305,7 +344,7 @@ img {
 .mob-menu {
   position: fixed;
   top: 0;
-  background-color: #fff;
+  background-color: var(--fourth-color);
   width: 100vw;
   height: 100vh;
   z-index: 5;
@@ -316,13 +355,42 @@ img {
   }
 }
 
+.mob-menu-container {
+  width: 100%;
+  padding-left: 40px;
+  padding-top: 48px;
+  padding-right: 40px;
+  padding-bottom: 48px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  overflow: auto;
+}
+@media screen and (min-width: 480px) {
+  .mob-menu-container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mob-menu-container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mob-menu-container {
+    width: 1200px;
+  }
+}
+
 .mob-menu-open-btn {
   width: 40px;
   height: 40px;
   background-color: transparent;
   border: transparent;
   position: absolute;
-  right: 10px;
+  right: 15px;
 }
 @media screen and (min-width: 768px) {
   .mob-menu-open-btn {
@@ -346,7 +414,7 @@ img {
 .mob-menu-close-btn {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 15px;
   width: 40px;
   height: 40px;
   border: transparent;
@@ -364,6 +432,11 @@ img {
 }
 .mob-menu-close-btn:focus .mob-menu-close, .mob-menu-close-btn:hover .mob-menu-close {
   fill: var(--secondary-color);
+}
+
+.mob-list {
+  text-decoration: none;
+  list-style: none;
 }
 
 .mob-list__link {
@@ -416,6 +489,8 @@ img {
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-decoration: none;
+  list-style: none;
   color: var(--secondary-color);
 }
 .mob-soc-list__link::after {
@@ -436,6 +511,7 @@ img {
 
 .mob-soc-list {
   display: flex;
+  list-style: none;
 }
 
 .mob-connect__item {
@@ -447,6 +523,14 @@ img {
 
 .mob-list__link--accent {
   color: var(--secondary-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.mob-connect {
+  list-style: none;
 }
 
 .hero {
