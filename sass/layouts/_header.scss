@@ -73,10 +73,6 @@
             top: 44px;
         }
     }
-    @include desktop {
-        &::after {
-        }
-    }
 }
 
 .menu__item-portfolio {
