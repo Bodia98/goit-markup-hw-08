@@ -470,6 +470,11 @@ img {
     font-size: 34px;
   }
 }
+@media screen and (min-width: 768px) {
+  .mob-connect__link-tel {
+    font-size: 12px;
+  }
+}
 
 .mob-connect__link-email {
   font-weight: 500;
@@ -481,6 +486,11 @@ img {
 @media screen and (min-width: 480px) {
   .mob-connect__link-email {
     font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mob-connect__link-email {
+    font-size: 12px;
   }
 }
 

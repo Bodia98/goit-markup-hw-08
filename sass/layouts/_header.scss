@@ -281,6 +281,9 @@
     @include mobile {
         font-size: 34px;
     }
+    @include tablet {
+        font-size: 12px;
+    }
 }
 
 .mob-connect__link-email {
@@ -291,6 +294,9 @@
     color: var(--third-color);
     @include mobile {
         font-size: 24px;
+    }
+    @include tablet {
+        font-size: 12px;
     }
 }
 .mob-soc-list__link {
