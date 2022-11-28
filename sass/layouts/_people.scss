@@ -1,7 +1,11 @@
 .people {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: var(--background-color-first);
+    @include desktop {
+        padding-top: 94px;
+    padding-bottom: 94px;
+    }
 }
 
 .people__container {
