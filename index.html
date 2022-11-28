@@ -436,9 +436,9 @@
     <!--Підвал-->
     <footer class="footer">
         <div class="container footer__container">
-                <div class="adress footer__adress"> 
+                <div class="footer__adress"> 
                     <a class="logo" href="./index.html">Web<span class="footer-studio">Studio</a>
-                    <address class="adress__adres">
+                    <address class="address">
                     <ul class="adress__list">
                         <li class="adress__item"><a class="adress__item-adress" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a></li>
                         <li class="adress__item"><a class="adress__item-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
@@ -479,21 +479,22 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer-mailing">
-                    <label for="mailing" class="mailing__title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</label>
-                    <form class="mailing__form">
-                    <input 
-                    type="email" 
-                id="mailing" 
+            <div class="footer-mailing">
+            <label for="mailing" class="mailing__title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</label>
+            <form class="mailing__form">
+            <input
+                type="email"
+                name="footer-form__item"
                 class="mailing__input"
-                    placeholder="E-mail">
-                    <button type="submit" class="button mailing__btn">Підписатися
-                        <svg class="mailing__icon" width="24" height="24">
-                            <use href="./images/icons.svg#icon-send"></use>
-                        </svg>
-                    </button>
-                    </form>
-                </div>
+                placeholder="E-mail"
+            />
+            <button class="footer-form__btn" type="submit">
+                Підписатися<svg class="mailing__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+            </button>
+            </form>
+            </div>
         </div>
     </footer>
     <!-- <div class="backdrop is-hidden" data-modal>
